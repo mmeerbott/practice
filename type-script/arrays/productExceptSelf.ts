@@ -4,8 +4,10 @@
 //  is equal to the product of all the elements of nums except nums[i].
 // Must be in O(n) time
 //
-//
-//
+// Solution:
+// Walk through array, grabbing the product at the index
+//  and setting the current index in result to the product (before updating product).
+//  Then repeat the process backwards (reset the product).
 
 function productExceptSelf(nums: number[]): number[] {
   const result = nums.map(n=>1);
@@ -26,10 +28,10 @@ function productExceptSelf(nums: number[]): number[] {
 };
 
 console.log(productExceptSelf([1,2,3,4]));
-// [24,12,8,6]
+// solution: [24,12,8,6]
 
 console.log(productExceptSelf([-1,1,0,-3,3]));
-// [0,0,9,0,0]
+// solution: [0,0,9,0,0]
 
 
 
@@ -47,4 +49,4 @@ console.log(productExceptSelf([-1,1,0,-3,3]));
 // 1*2=2 (for index 2)
 //
 // It can then be repeated backwards to get the products ahead of the index
-// numbers (denoted by -)
+// (the missing numbers denoted by -)
