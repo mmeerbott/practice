@@ -40,7 +40,7 @@ console.log(productExceptSelf([-1,1,0,-3,3]));
 //  0 1 2 3  <--indices
 //i
 //0, 1  -  - -
-//1, 2  1  - -  c=1, c*=c*n[i-1]
+//1, 2  1  - -
 //2, 6  3  2 -
 //3, 24 12 8 6  
 // notice the current/latest index product is the product of the previous entries
@@ -49,4 +49,4 @@ console.log(productExceptSelf([-1,1,0,-3,3]));
 // 1*2=2 (for index 2)
 //
 // It can then be repeated backwards to get the products ahead of the index
-// (the missing numbers denoted by -)
+//  (the missing numbers above, denoted by -)
